@@ -35,7 +35,7 @@ id,sex,age,height,weight,headband,college,tattoos,tchests,parrots,favorite.pirat
 34,female,,162.6,61,yes,CCCC,13,15,6,Jack Sparrow,cutlass,1,1.26,0,"Monsters, Inc.",7
 35,male,23,178.24,75.1,yes,CCCC,17,2,1,Hook,cutlass,0,0.34,24,Brave,8
 36,female,18,163.09,63.3,yes,CCCC,9,14,0,Jack Sparrow,cutlass,0,0.14,0,Monsters University,9
-37,other,27,161.2,63.6,no,CCCC,0,3,"""1""",Lewis Scot,scimitar,1,8.48,3,A Bug's Life,8
+37,other,27,161.2,63.6,no,CCCC,0,3,1,Lewis Scot,scimitar,1,8.48,3,A Bug's Life,8
 38,female,31,158.03,63,yes,JSSFP,8,1,2,Lewis Scot,cutlass,1,1.57,0,A Bug's Life,13
 39,female,25,129.83,33,no,CCCC,6,39,1,Edward Low,sabre,0,1.13,1,Finding Nemo,13
 40,female,36,153.68,61.7,yes,JSSFP,9,18,6,Anicetus,cutlass,1,0.17,0,Up,12
