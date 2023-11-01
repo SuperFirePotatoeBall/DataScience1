@@ -1,3 +1,16 @@
-﻿body
-{
+﻿.smallTitle{
+	font-size: 24px;
+}
+#largeTitle{
+	font-size: 36px;
+}
+#allTitles{
+	 margin-top: 20vh;
+	 font-family: jost;
+	 line-height: 0.8;
+}
+#mainSection{
+	margin-top: 20vh;
+	margin-left: 30vw;
+	margin-right: 30vw;
 }
