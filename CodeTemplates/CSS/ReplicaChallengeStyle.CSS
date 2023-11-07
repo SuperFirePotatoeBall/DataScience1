@@ -1,0 +1,31 @@
+﻿body {
+    overflow: hidden; /* Hide the default scrollbar */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: blue;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Make the video cover the entire viewport */
+    z-index: -1; /* Position the video below the content */
+}
+
+.content {
+    position: relative; /* Position the content relative to the viewport */
+    z-index: 1; /* Position the content above the video */
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
