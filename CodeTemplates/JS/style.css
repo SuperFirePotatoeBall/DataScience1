@@ -1,3 +1,38 @@
-﻿body
-{
+﻿button {
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50px; /* Makes the button round */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white; /* Text color */
+}
+.container {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      height: 100vh; /* Adjust the container height as needed */
+    }
+body {
+    color: white;
+    background-color: midnightblue;
+    font-family: 'PT Sans', sans-serif;
+}
+.green{
+    color:springgreen;
+}
+.headphones{
+    color:darkgrey;
+}
+
+#video-background {
+		position: fixed;
+		width: 100vw;
+		z-index: -1;
+}
+#elementToFade {
+    opacity: 1;
+    transition: opacity 1s; /* You can adjust the duration (1s) to control the fade speed */
 }
