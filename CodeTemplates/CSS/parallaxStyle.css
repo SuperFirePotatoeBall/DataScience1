@@ -1,12 +1,19 @@
-﻿.parallax {
-  /* The image used */
-  background-image: url("img.png");
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
+﻿.mg1, .img2{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+p{
+	background-color: white;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+.img1{
+	background-image: url("img.png");
+	min-height: 500px;
+}
+.img2{
+	background-image: url("image.png");
+	min-height: 500px;
 }

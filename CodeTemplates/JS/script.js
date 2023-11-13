@@ -1,22 +1,10 @@
-function button(){
-    var button = document.createElement("button");
-    button.innerHTML = "Dynamic Button";
-    button.id = "dynamicButton";
-
-    button.addEventListener("click", function() {
-        transition();
-    });
-    document.body.appendChild(button);
-}
-function transition(){
-    document.getElementById('fadeButton').addEventListener('click', function() {
-    var elementToFade = document.getElementById('elementToFade');
-    
-    // Toggle the opacity property to trigger the fade effect
-    if (elementToFade.style.opacity === '1') {
-        elementToFade.style.opacity = '0';
-    } else {
-        elementToFade.style.opacity = '1';
-    }
-});  
+function fadeOutElements() {
+    // Get elements by their IDs
+    var element = document.getElementById('all');
+    var button = document.getElementById('button');
+    var fadeIn = document.getElementById('fade-in');
+    // Apply the fade-out effect by changing opacity
+    element.style.opacity = '0';
+    button.style.top = '220px';
+    fadeIn.style.opacity = '100';
 }
