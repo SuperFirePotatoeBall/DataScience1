@@ -1,3 +1,35 @@
-﻿body
-{
+﻿html{
+	height: 1000vh;
+}
+body {
+	
+	font-family: "Montserrat", sans-serif;
+	background-color: #31353b;
+
+}
+div {
+	background-color: #d1d7e0;
+	position: fixed;
+
+	margin-top: 25vh;
+	margin-bottom: 25vh;
+	margin-left: 20vw;
+	margin-right: 20vw;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.titleDiv {
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+}
+.mainTitle {
+	text-align: center;
+	font-size: 10vh;
+}
+.questionDiv {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
 }
