@@ -1,5 +1,5 @@
 ﻿html{
-	height: 1000vh;
+	height: 2000px;
 }
 body {
 	
@@ -20,16 +20,40 @@ div {
 	padding-bottom: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
-}
-.titleDiv {
-	opacity: 1;
-	transition: opacity 0.5s ease-in-out;
+	width: 60vw;
 }
 .mainTitle {
 	text-align: center;
 	font-size: 10vh;
 }
+.titleDiv {
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+}
 .questionDiv {
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 }
+.dataDiv {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+.analysisDiv {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+.visualizationDiv{
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+.answerDiv {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+#scroll-distance {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border: 1px solid #ccc;

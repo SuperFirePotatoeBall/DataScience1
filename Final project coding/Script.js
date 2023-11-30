@@ -1,27 +1,100 @@
 window.addEventListener('scroll', handleScroll)
 
-const titleHeight = 1000;
-const questionHeight = 2000;
+const titleHeight = 200;
+const questionHeight = 400;
+const dataHeight = 600;
+const analysisHeight = 800;
+const visualizationHeight = 1000;
 
+var title = document.getElementById("titleDiv");
+var question = document.getElementById("questionDiv");
+var data = document.getElementById("dataDiv");
+var analysis = document.getElementById("analysisDiv");
+var visualization = document.getElementById("visualizationDiv");
+var answer = document.getElementById("answerDiv");
 
+var titleTimes = [];
+var questionTimes = [];
+var dataTimes = [];
+var analysisTimes = [];
+var visualizationTimes = [];
+var answerTimes = [];
 
 function handleScroll (){
+    updateScrollDistancse()
+    x = getScrollDistance()
+
     //Title
-    var title = document.getElementById("titleDiv");
-    if (getScrollDistance() > titleHeight){
+    if (0 <= x && x <= titleHeight){ // 0 <= x <= titleHeight
+        titleTime = setTimeout(function(){title.style.opacity = 100;}, 500);
+        titleTimes.push(titleTime);
+    } else {
+        for (var i = 0; i < titleTimes.length; i++) {
+            clearTimeout(titleTimes[i]);
+        }
         title.style.opacity = 0;
-    } else if (getScrollDistance() <= titleHeight){
-        title.style.opacity = 100;
     }
+
     //Question
-    var question = document.getElementById("questionDiv");
-    if (getScrollDistance() > questionHeight || getScrollDistance() <= titleHeight){
+    if (titleHeight < x && x <= questionHeight){ // titleHeight < x <= questionHeight
+        questionTime = setTimeout(function(){question.style.opacity = 100;}, 500);
+        questionTimes.push(questionTime);
+    } else {
+        for (var i = 0; i < questionTimes.length; i++) {
+            clearTimeout(questionTimes[i]);
+        }
         question.style.opacity = 0;
-    } else if (getScrollDistance() <= questionHeight){
-        question.style.opacity = 100;
+    }
+
+    //Data
+    if (questionHeight < x && x <= dataHeight){
+        dataTime = setTimeout(function(){data.style.opacity = 100;}, 500);
+        dataTimes.push(dataTime);
+    } else {
+        for (var i = 0; i < dataTimes.length; i++) {
+            clearTimeout(dataTimes[i]);
+        }
+        data.style.opacity = 0;
+    }
+
+    //Analysis
+    if (dataHeight < x && x <= analysisHeight){
+        analysisTime = setTimeout(function(){analysis.style.opacity = 100;}, 500);
+        analysisTimes.push(analysisTime);
+    } else {
+        for (var i = 0; i < analysisTimes.length; i++) {
+            clearTimeout(analysisTimes[i]);
+        }
+        analysis.style.opacity = 0;
+    }
+
+    //Visualization
+    if (analysisHeight < x && x <= visualizationHeight){
+        visualizationTime = setTimeout(function(){visualization.style.opacity = 100;}, 500);
+        visualizationTimes.push(visualizationTime);
+    } else {
+        for (var i = 0; i < visualizationTimes.length; i++) {
+            clearTimeout(visualizationTimes[i]);
+        }
+        visualization.style.opacity = 0;
+    }
+
+    //Answer
+    if (visualizationHeight < x){
+        answerTime = setTimeout(function(){answer.style.opacity = 100;}, 500);
+        answerTimes.push(visualizationTime);
+    } else {
+        for (var i = 0; i < answerTimes.length; i++) {
+            clearTimeout(answerTimes[i]);
+        }
+        answer.style.opacity = 0;
     }
 }
 function getScrollDistance() {
     var scrollDistance = document.documentElement.scrollTop || document.body.scrollTop;
     return scrollDistance;
+}
+function updateScrollDistancse() {
+    var distanceElement = document.getElementById('scroll-distance');
+    distanceElement.textContent = 'Scroll Distance: ' + getScrollDistance() + ' pixels';
 }
