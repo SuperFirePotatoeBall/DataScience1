@@ -57,3 +57,34 @@ div {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 600px) {
+	div{
+		background-color: #d1d7e0;
+		position: relative;
+		margin-top: 10vh;
+		margin-bottom: 10vh;
+		margin-left: 10vw;
+		margin-right: 10vw;
+	}
+	.mainTitle {
+		text-align: center;
+		font-size: 5vh;
+	}
+	.questionDiv {
+		opacity: 1;
+	}
+	.dataDiv {
+		opacity: 1;
+	}
+	.analysisDiv {
+		opacity: 1;
+	}
+	.visualizationDiv{
+		opacity: 1;
+	}
+	.answerDiv {
+		opacity: 1;
+	}
+}

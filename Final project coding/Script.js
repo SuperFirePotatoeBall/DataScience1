@@ -1,5 +1,3 @@
-window.addEventListener('scroll', handleScroll)
-
 const titleHeight = 200;
 const questionHeight = 400;
 const dataHeight = 600;
@@ -19,14 +17,16 @@ var dataTimes = [];
 var analysisTimes = [];
 var visualizationTimes = [];
 var answerTimes = [];
-
+if (window.innerWidth > 600){
+    window.addEventListener('scroll', handleScroll)
+}
 function handleScroll (){
     updateScrollDistancse()
     x = getScrollDistance()
 
     //Title
     if (0 <= x && x <= titleHeight){ // 0 <= x <= titleHeight
-        titleTime = setTimeout(function(){title.style.opacity = 100;}, 500);
+        titleTime = setTimeout(function(){title.style.opacity = 100;}, 550);
         titleTimes.push(titleTime);
     } else {
         for (var i = 0; i < titleTimes.length; i++) {
@@ -37,7 +37,7 @@ function handleScroll (){
 
     //Question
     if (titleHeight < x && x <= questionHeight){ // titleHeight < x <= questionHeight
-        questionTime = setTimeout(function(){question.style.opacity = 100;}, 500);
+        questionTime = setTimeout(function(){question.style.opacity = 100;}, 550);
         questionTimes.push(questionTime);
     } else {
         for (var i = 0; i < questionTimes.length; i++) {
@@ -48,7 +48,7 @@ function handleScroll (){
 
     //Data
     if (questionHeight < x && x <= dataHeight){
-        dataTime = setTimeout(function(){data.style.opacity = 100;}, 500);
+        dataTime = setTimeout(function(){data.style.opacity = 100;}, 550);
         dataTimes.push(dataTime);
     } else {
         for (var i = 0; i < dataTimes.length; i++) {
@@ -59,7 +59,7 @@ function handleScroll (){
 
     //Analysis
     if (dataHeight < x && x <= analysisHeight){
-        analysisTime = setTimeout(function(){analysis.style.opacity = 100;}, 500);
+        analysisTime = setTimeout(function(){analysis.style.opacity = 100;}, 550);
         analysisTimes.push(analysisTime);
     } else {
         for (var i = 0; i < analysisTimes.length; i++) {
@@ -70,7 +70,7 @@ function handleScroll (){
 
     //Visualization
     if (analysisHeight < x && x <= visualizationHeight){
-        visualizationTime = setTimeout(function(){visualization.style.opacity = 100;}, 500);
+        visualizationTime = setTimeout(function(){visualization.style.opacity = 100;}, 550);
         visualizationTimes.push(visualizationTime);
     } else {
         for (var i = 0; i < visualizationTimes.length; i++) {
@@ -81,8 +81,8 @@ function handleScroll (){
 
     //Answer
     if (visualizationHeight < x){
-        answerTime = setTimeout(function(){answer.style.opacity = 100;}, 500);
-        answerTimes.push(visualizationTime);
+        answerTime = setTimeout(function(){answer.style.opacity = 100;}, 550);
+        answerTimes.push(answerTime);
     } else {
         for (var i = 0; i < answerTimes.length; i++) {
             clearTimeout(answerTimes[i]);
