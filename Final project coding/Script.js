@@ -17,6 +17,9 @@ var dataTimes = [];
 var analysisTimes = [];
 var visualizationTimes = [];
 var answerTimes = [];
+
+handleScroll()
+
 if (window.innerWidth > 600){
     window.addEventListener('scroll', handleScroll)
 }

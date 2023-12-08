@@ -22,12 +22,17 @@ div {
 	padding-right: 20px;
 	width: 60vw;
 }
-.mainTitle {
+.titleText {
 	text-align: center;
 	font-size: 10vh;
 }
+.text {
+	text-align: center;
+	font-size: 25px;
+	line-height: 2;
+}
 .titleDiv {
-	opacity: 1;
+	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 }
 .questionDiv {
