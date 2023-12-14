@@ -1,5 +1,5 @@
 ﻿html{
-	height: 2000px;
+	height: 5000px;
 }
 body {
 	
@@ -7,11 +7,11 @@ body {
 	background-color: #31353b;
 
 }
-div {
+.titleDiv, .introDiv, .data1Div, .data2Div, .data3Div, .conclusionDiv {
 	background-color: #d1d7e0;
 	position: fixed;
 
-	margin-top: 25vh;
+	margin-top: 15vh;
 	margin-bottom: 25vh;
 	margin-left: 20vw;
 	margin-right: 20vw;
@@ -35,23 +35,23 @@ div {
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 }
-.questionDiv {
+.introDiv {
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 }
-.dataDiv {
+.data1Div {
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 }
-.analysisDiv {
+.data2Div {
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 }
-.visualizationDiv{
+.data3Div{
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 }
-.answerDiv {
+.conclusionDiv {
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 }
