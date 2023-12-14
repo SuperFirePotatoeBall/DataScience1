@@ -34,7 +34,7 @@ var data3Text = document.getElementById("data3Text");
 const d11text = "To view the relationship between CO2 and lung cancer, let us look at two states, Arkansas and Utah.";
 const d12text = "Both states released similar amounts of CO2 into the air, 62.02 megatonnes and 62.05 megatonnes, respectively.";
 const d13text = "With such a similar amount of CO2 released, if it had a direct effect on lung cancer rates, we would expect both to have similar lung cancer rates.";
-const d14text = "owever, we don't see this; Arkansas has over four times as many cancer cases per million people.";
+const d14text = "However, we don't see this; Arkansas has over four times as many cancer cases per million people.";
 
 const d21text = "Well, maybe a different example would show a correlation, so let's look at California and New Mexico.";
 const d22text = "Both have similar lung cancer rates, with approximately 453 lung cancer cases per million people.";
