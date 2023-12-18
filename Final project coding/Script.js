@@ -1,11 +1,12 @@
 const h = 200; // height of every part
 
-const th = 200; //title height
-const ih = th + 200; //intro height
-const d1h = ih + h*4; //data 1 height
-const d2h = d1h + h*5; //data 2 height
-const d3h = d2h + h*2; //data 3 height
-//no conclusion height because it goes to the end of the doc
+//"I don't need comments, I know my code!' -Me, probably making a mistake"
+const th = 200; 
+const ih = th + 200; 
+const d1h = ih + h*4; 
+const d2h = d1h + h*5; 
+const d3h = d2h + h*2; 
+
 const d11h = ih + h*1;
 const d12h = ih + h*2;
 const d13h = ih + h*3;
@@ -43,7 +44,8 @@ const d24text = "California meets our expectations, releasing 324.03 megatonnes 
 const d25text = "But New Mexico? It only released 45.8 megatonnes of CO2, the 14th lowest state.";
 
 const d31text = "These are only two examples, maybe seeing the whole graph will tell us more.";
-const d32text = "As we can see, the number of cancer cases a state has is random, unaffected by how much CO2 they release each year.";
+const d32text = "Each state's CO2 output and lung cancer rates seem entirely random, because they are!";
+const d33text = "The statistical correlation coefficient is -0.116, meaning it has a very weak correlation, or one variable has little to no effect on the other.";
 
 var titleTimes = [];
 var introTimes = [];
@@ -52,13 +54,20 @@ var d2Times = [];
 var d3Times = [];
 var conTimes = [];
 
-handleScroll()
 
-if (window.innerWidth > 600){
+if (window.innerWidth > 700){
+    handleScroll()
     window.addEventListener('scroll', handleScroll)
+} else {
+    smallWebsite()
 }
+function smallWebsite(){
+    data1Text.textContent = d11text + " " + d12text + " " + d13text + " " + d14text;
+    data2Text.textContent = d21text + " " + d22text + " " + d23text + " " + d24text + " " + d25text;
+    data3Text.textContent = d31text + " " + d32text + " " + d33text;
+}
+
 function handleScroll (){
-    updateScrollDistancse()
     x = getScrollDistance()
 
     //Title
@@ -133,6 +142,8 @@ function handleScroll (){
             data3Text.textContent = d31text;
         } else if (d31h < x && x <= d32h){
             data3Text.textContent = d32text;
+        } else if (d32h < x && x <= d33h){
+            data3Text.textContent = d33text;
         }
     } else {
         for (var i = 0; i < d3Times.length; i++) {
@@ -155,8 +166,4 @@ function handleScroll (){
 function getScrollDistance() {
     var scrollDistance = document.documentElement.scrollTop || document.body.scrollTop;
     return scrollDistance;
-}
-function updateScrollDistancse() {
-    var distanceElement = document.getElementById('scroll-distance');
-    distanceElement.textContent = 'Scroll Distance: ' + getScrollDistance() + ' pixels';
 }

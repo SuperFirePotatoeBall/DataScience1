@@ -1,95 +1,107 @@
-﻿html{
-	height: 5000px;
-}
-body {
-	
-	font-family: "Montserrat", sans-serif;
-	background-color: #31353b;
-
-}
-.titleDiv, .introDiv, .data1Div, .data2Div, .data3Div, .conclusionDiv {
-	background-color: #d1d7e0;
-	position: fixed;
-
-	margin-top: 15vh;
-	margin-bottom: 25vh;
-	margin-left: 20vw;
-	margin-right: 20vw;
-
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-	width: 60vw;
-}
-.titleText {
-	text-align: center;
-	font-size: 10vh;
-}
-.text {
-	text-align: center;
-	font-size: 25px;
-	line-height: 2;
-}
-.titleDiv {
-	opacity: 0;
-	transition: opacity 0.5s ease-in-out;
-}
-.introDiv {
-	opacity: 0;
-	transition: opacity 0.5s ease-in-out;
-}
-.data1Div {
-	opacity: 0;
-	transition: opacity 0.5s ease-in-out;
-}
-.data2Div {
-	opacity: 0;
-	transition: opacity 0.5s ease-in-out;
-}
-.data3Div{
-	opacity: 0;
-	transition: opacity 0.5s ease-in-out;
-}
-.conclusionDiv {
-	opacity: 0;
-	transition: opacity 0.5s ease-in-out;
-}
-#scroll-distance {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-@media screen and (max-width: 600px) {
-	div{
-		background-color: #d1d7e0;
-		position: relative;
-		margin-top: 10vh;
-		margin-bottom: 10vh;
-		margin-left: 10vw;
-		margin-right: 10vw;
+﻿@media screen and (min-width: 600px) {
+	html{
+		height: 3500px;
 	}
-	.mainTitle {
+	body {
+	
+		font-family: "Montserrat", sans-serif;
+		background-color: #31353b;
+	}
+	.titleDiv, .introDiv, .data1Div, .data2Div, .data3Div, .conclusionDiv {
+		background-color: #d1d7e0;
+		position: fixed;
+
+		margin-top: 15vh;
+		margin-bottom: 25vh;
+		margin-left: 20vw;
+		margin-right: 20vw;
+
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 60vw;
+	}
+	.picsmall{
+		width: 500px;
+		height: 400px;
+	}
+	.piclarge{
+		width: 600px;
+		height: 400px;
+	}
+	.titleText {
+		text-align: center;
+		font-size: 10vh;
+	}
+	.text {
+		text-align: center;
+		font-size: 25px;
+		line-height: 2;
+	}
+	.titleDiv {
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+	}
+	.introDiv {
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+	}
+	.data1Div {
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+	}
+	.data2Div {
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+	}
+	.data3Div{
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+	}
+	.conclusionDiv {
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+	}
+}
+@media screen and (max-width: 600px) {
+	body {
+		font-family: "Montserrat", sans-serif;
+		background-color: #31353b;
+		position: static;
+	}
+	.picsmall{
+		width: 95vw;
+		height: 72vw;
+	}
+	.piclarge{
+		width: 95vw;
+		height: 60vw;
+	}
+	.titleDiv, .introDiv, .data1Div, .data2Div, .data3Div, .conclusionDiv {
+		background-color: #d1d7e0;
+		width: 95vw
+	}
+	.titleText {
 		text-align: center;
 		font-size: 5vh;
 	}
-	.questionDiv {
-		opacity: 1;
+	.text {
+		text-align: center;
+		font-size: 15px;
+		line-height: 2;
 	}
-	.dataDiv {
-		opacity: 1;
+	.titleDiv {
 	}
-	.analysisDiv {
-		opacity: 1;
+	.introDiv {
 	}
-	.visualizationDiv{
-		opacity: 1;
+	.data1Div {
 	}
-	.answerDiv {
-		opacity: 1;
+	.data2Div {
 	}
+	.data3Div {
+	}
+	.conclusionDiv {
+	}
+	
 }
